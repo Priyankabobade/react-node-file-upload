@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import FilesUploadComponent from './components/FilesUploadComponent/FilesUploadComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='container mt-4'>
+    <h4 className='display-4 text-center mb-4'>
+      <i className='fab fa-react' /> React File Upload
+    </h4>
+
+    <FilesUploadComponent />
+  </div>
   );
 }
 
